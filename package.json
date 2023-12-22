@@ -1,0 +1,17 @@
+{
+  "name": "start",
+  "version": "1.0.0",
+  "description": "Awsome Project With Gulp",
+  "main": "Project_Map.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "web"
+  ],
+  "author": "Hossam Rashad",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}
