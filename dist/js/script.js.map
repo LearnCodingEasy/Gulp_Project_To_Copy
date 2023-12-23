@@ -1,1 +1,1 @@
-{"version":3,"sources":["script.js"],"names":["console","log"],"mappings":"AAAA,aAEAA,QAAAC,IAAA,KAAA,EACAD,QAAAC,IAAA,IAAA,EACAD,QAAAC,IAAA,IAAA","file":"script.js","sourcesContent":["\"use strict\";\n\nconsole.log(\"Yes\");\nconsole.log(\"no\");\nconsole.log(\"no\");"]}
+{"version":3,"sources":["script.js"],"names":["console","log"],"mappings":"AAAA,aAEAA,QAAAC,IAAA,KAAA","file":"script.js","sourcesContent":["\"use strict\";\n\nconsole.log(\"Yes\");"]}
