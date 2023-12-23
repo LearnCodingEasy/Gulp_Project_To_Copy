@@ -1,7 +1,7 @@
 ## Global Gulp Project
 
 ```
-Project Gulp Map:
+📁 Project Gulp Map:
 |--- Dist
 | |--- Css
 | |--- Data
