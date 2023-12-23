@@ -38,13 +38,7 @@
 | | |--- libraries
 | | |--- Script.js
 
-|--- .gitignore
-|--- Gulpfile.js
-|--- package-lock.json
-|--- package.json
-|--- Project_Map.js
-|--- server.js
-|--- website.zip
+
 ```
 
 ```
@@ -92,5 +86,11 @@
   - 📄 **Project_Map.js**
   - 📄 **server.js**
   - 📄 **website.zip**
-
+|--- .gitignore
+|--- Gulpfile.js
+|--- package-lock.json
+|--- package.json
+|--- Project_Map.js
+|--- server.js
+|--- website.zip
 ```
