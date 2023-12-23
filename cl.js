@@ -49,29 +49,6 @@
  * =>
  * Link: Tasks
  *
-// ===== Task Html =====
-gulp.task("html", function () {
-  return gulp
-    .src("project/pug/*.pug")
-    .pipe(pug({ pretty: true }))
-    .pipe(gulp.dest("dist"))
-    .pipe(livereload())
-    .pipe(notify("Html Task Is Done"));
-});
-
-// ===== Task Scss  =====
-gulp.task("scss", function () {
-  return gulp
-    .src("project/css/scss/**\/*.scss")
-    .pipe(sourcemaps.init())
-    .pipe(sass({ outputStyle: "compressed" }).on("error", sass.logError))
-    .pipe(autoprefixer("last 2 versions"))
-    .pipe(concat("style.css"))
-    .pipe(sourcemaps.write("."))
-    .pipe(gulp.dest("dist/css"))
-    .pipe(livereload())
-    .pipe(notify("Scss Task Is Done"));
-});
 
 // ===== Task Libs Css =====
 gulp.task("libs-css", function () {

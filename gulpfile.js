@@ -5,7 +5,7 @@ const gulp = require("gulp");
 const concat = require("gulp-concat");
 
 // Import [Auto Prefixer] استدعاء
-// const autoprefixer = require("gulp-autoprefixer");
+const autoprefixer = require("gulp-autoprefixer");
 // import autoprefixer from "gulp-autoprefixer";
 
 // Import [Sass] استدعاء
@@ -44,7 +44,7 @@ const ftp = require("vinyl-ftp");
 // ===== Task Html =====
 gulp.task("html", function () {
   return gulp
-    .src("project/pug/*.pug")
+    .src("project/html/pug/*.pug")
     .pipe(pug({ pretty: true }))
     .pipe(gulp.dest("dist"))
     .pipe(notify("Html Task Is Done"))
@@ -56,9 +56,10 @@ gulp.task("html", function () {
 // ===== Task Css =====
 gulp.task("css", function () {
   return gulp
-    .src("project/scss/*.scss")
+    .src("project/css/scss/**/*.scss")
     .pipe(sourcemaps.init())
     .pipe(sass({ outputStyle: "compressed" }).on("error", sass.logError))
+    .pipe(autoprefixer("last 2 versions"))
     .pipe(concat("style.css"))
     .pipe(sourcemaps.write("."))
     .pipe(gulp.dest("dist/css"))
@@ -140,9 +141,9 @@ gulp.task("watch", function () {
   require("./server.js");
   livereload.listen();
   // Html
-  gulp.watch("project/pug/**/*.pug", gulp.series("html"));
+  gulp.watch("project/html/pug/**/*.pug", gulp.series("html"));
   // Css
-  gulp.watch("project/scss/**/*.scss", gulp.series("css"));
+  gulp.watch("project/css/scss/**/*.scss", gulp.series("css"));
   // gulp.watch("project/libs-css/**/*", gulp.series("libs-css"));
   // Javascript
   gulp.watch("project/js/**/*.js", gulp.series("js"));
