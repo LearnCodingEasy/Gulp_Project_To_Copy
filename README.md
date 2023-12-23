@@ -1,5 +1,10 @@
 ## Global Gulp Project
 
+### Install
+```
+npm install
+```
+
 ```
 
 |- 📁 **Project_Gulp_Map**
