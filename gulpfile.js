@@ -68,6 +68,16 @@ gulp.task("css", function () {
 });
 // To Run => gulp css
 
+// ===== Task libraries Css =====
+gulp.task("css_libraries", function () {
+  return gulp
+    .src("project/css/libraries/**/*")
+    .pipe(gulp.dest("dist/css/libraries"))
+    .pipe(livereload())
+    .pipe(notify("Css libraries Task Is Done"));
+});
+// To Run => gulp css_libraries
+
 // ===== Task Js =====
 gulp.task("js", function () {
   return gulp
@@ -82,6 +92,15 @@ gulp.task("js", function () {
     .pipe(livereload());
 });
 // To Run => gulp js
+
+// ===== Task libraries Js =====
+gulp.task("js_libraries", function () {
+  return gulp
+    .src("project/js/libraries/**/*")
+    .pipe(gulp.dest("dist/js/libraries"))
+    .pipe(livereload())
+    .pipe(notify("js libraries Task Is Done"));
+});
 
 // ===== Task Json Server =====
 gulp.task("jsonServer", function () {
@@ -144,11 +163,11 @@ gulp.task("watch", function () {
   gulp.watch("project/html/pug/**/*.pug", gulp.series("html"));
   // Css
   gulp.watch("project/css/scss/**/*.scss", gulp.series("css"));
-  // gulp.watch("project/libs-css/**/*", gulp.series("libs-css"));
+  gulp.watch("project/css/libraries/**/*", gulp.series("css_libraries"));
   // Javascript
   gulp.watch("project/js/**/*.js", gulp.series("js"));
   // gulp.watch("project/ts/**\/*.ts", gulp.series("ts"));
-  // gulp.watch("project/libs-js/**/*", gulp.series("libs-js"));
+  gulp.watch("project/js/libraries/**/*", gulp.series("js_libraries"));
   // Json Server
   gulp.watch("project/data/*.json", gulp.series("jsonServer"));
   // Images
