@@ -1,140 +1,7 @@
 /** Gulp Help
  * 
  * 
- * 
- * 
- * 3
- * Done: Compile Sass Files
- * 
- * 
- * 
- * 
- * 5
- * Done: Local Server
- * Local Server اضافة خاص بى تشغيل ال
- * Link: (https://www.npmjs.com/package/static-server)
- * Local Server تنزيل الاضافة
- * => npm i static-server -save
- * File: Work With Gulp File
- * انشاء ملف
- * => server.js
- * داخل الملف
- * => var StaticServer = require("static-server");
- * => var server = new StaticServer({
-          rootPath: "./dist/",
-          port: 1010,
-      });
- * => server.start(function() {
-        console.log("Server Started At Port ", server.port);
-      });
- * Local Server استخدام
- * => require("./server.js");
  *
- * 
- * 6
- * Done: Live Reload
- * Live Reload اضافة خاص بى تشغيل ال
- * Link: (https://www.npmjs.com/package/gulp-livereload)
- * Live Reload تنزيل الاضافة
- * => npm install --save-dev gulp-livereload
- * File: Work With Gulp File
- * live Reload استدعاء
- * => const livereload = require('gulp-livereload');
- * live Reload استخدام
- * Tasks استخدام الاضافة فى جميع ال
- * => .pipe(livereload());
- * Tasks Watch استخدام الاضافة فى
- * =>  livereload.listen();
- * Live Reload اضافة الاسكرابت الخاص بى ال
- * Index.Pug فى ملف ال 
- * =>  script(src="http://localhost:35729/livereload.js")
- *
- *
- * 7
- * Done: Source Maps
- * Source Maps اضافة خاص بى تشغيل ال
- * Link: (https://www.npmjs.com/package/gulp-sourcemaps)
- * Source Maps تنزيل الاضافة
- * => npm i gulp-sourcemaps --save-dev
- * File: Work With Gulp File
- * Source Maps استدعاء
- * => const sourcemaps = require("gulp-sourcemaps");
- * Source Maps استخدام
- * => .pipe(sourcemaps.init())
- * => .pipe(sourcemaps.write("."))
- *
- *
- * 8
- * Done: Minifying Js Files With Uglify
- * Uglify اضافة بتضغاط ملف الجافا اسكربت
- * Link: (https://www.npmjs.com/package/gulp-uglify)
- * Uglify تنزيل الاضافة
- * => npm install --save-dev gulp-uglify
- * File: Work With Gulp File
- * Uglify استدعاء
- * => const uglify = require("gulp-uglify");
- * Uglify استخدام
- * => .pipe(uglify())
- *
- *
- * 9
- * Done: Show Notification With Notify
- * Notify اضافة تنبية بى انو التاسك تم الانتهاء
- * Link: (https://www.npmjs.com/package/gulp-notify)
- * Notify تنزيل الاضافة
- * => npm i gulp-notify --save-dev
- * File: Work With Gulp File
- * Notify استدعاء
- * => const notify = require("gulp-notify");
- * Notify استخدام
- * => .pipe(notify("Task ... Is Done"));
- *
- *
- * 10
- * Done: Babel
- * Babel اضافة تنبية بى انو التاسك تم الانتهاء
- * ECMAScript 2015+ الى كود JavaScript تحويل  كود
- * Link: (https://www.npmjs.com/package/gulp-babel)
- * Babel تنزيل الاضافة
- * => npm i gulp-babel
- * => npm install --save-dev gulp-babel @babel/core @babel/preset-env
- * File: Work With Gulp File
- * Babel استدعاء
- * => const babel = require("gulp-babel");
- * Babel استخدام
- * => .pipe(babel({presets: ["@babel/preset-env"],}))
- *
- *
- * Number-11
- * Done: Compress Files With Zip
- * Zip اضافة لعمال المشروع مضغوط
- * Link: (https://www.npmjs.com/package/gulp-zip)
- * Babel تنزيل الاضافة
- * => npm install --save-dev gulp-zip
- * File: Work With Gulp File
- * Zip استدعاء
- * => const zip = require("gulp-zip");
- * Compress فى تاسك الى  Zip استخدام
- * => // ===== Task Zpi Compress =====
-    gulp.task("compress", function () {
-    return gulp
-        .src("dist/**\/*")
-        .pipe(zip("website.zip"))
-        .pipe(gulp.dest("."))
-        .pipe(notify("Files Is Compressed To Zip "));
-    });
- * 
- * Number-12
- * Done: Upload Files With Ftp 
- * Vinyl-Ftp اضافة تحميل الموقع على الاستضافة 
- * Link: (https://www.npmjs.com/package/vinyl-ftp)
- * Vinyl-Ftp تنزيل الاضافة
- * => npm i vinyl-ftp 
- * File: Work With Gulp File
- * Vinyl-Ftp استدعاء
- * => const ftp = require('vinyl-ftp');
- * Vinyl-Ftp استخدام
- * => .pipe(babel({presets: ["@babel/preset-env"],}))
  *
  *
  * Number-13
@@ -152,28 +19,11 @@
  * 
  * => var ts = require('gulp-typescript');
  * 
- * Number-14
- * Done: webp
- * webp اضافة لضغط الصور
- * Link: (https://www.npmjs.com/package/gulp-webp)
- * webp تنزيل الاضافة
- * => npm install --save-dev gulp-webp
- * File: Work With Gulp File
- * webp استدعاء
- * => const webp = require("gulp-webp");
- * webp استخدام
- * => .pipe(webp())
  * 
  * Number-15
- * ? Json Server
- * Json Server اضافة لعمال ملاف جسان كا دات بيس
- * Link: (https://www.npmjs.com/package/gulp-json-server)
- * Json Server تنزيل الاضافة
- * => npm install -g json-server
- * => npm i gulp-json-server
- * Json Server استخدام
- * json-server --watch db.json
- *
+ * ? 
+ * 
+ * 
  *
  * Done: Input And Output
  * هو مصدار الملفات اللى انت شغال عليه Src
