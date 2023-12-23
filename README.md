@@ -5,6 +5,16 @@
 npm install
 ```
 
+### Watch
+```
+gulp watch
+```
+
+### Watch Json Server
+```
+json-server --watch project/data/data.json
+```
+
 ```
 
 |- 📁 **Project_Gulp_Map**
