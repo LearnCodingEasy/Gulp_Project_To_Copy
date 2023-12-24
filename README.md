@@ -1,16 +1,19 @@
 ## Global Gulp Project
 
 ### Install
+
 ```
 npm install
 ```
 
 ### Watch
+
 ```
 gulp watch
 ```
 
 ### Watch Json Server
+
 ```
 json-server --watch project/data/data.json
 ```
@@ -29,6 +32,7 @@ ____________________
 | | |- 📂 Css
 | | | |- 📂 libraries
 | | | |- 📂 Scss
+| | | | |- 📂 Base
 | | | | |- 📂 Footer
 | | | | |- 📂 Header
 | | | | |- 📂 Main

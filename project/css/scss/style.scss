@@ -1,3 +1,10 @@
+// Config
+@import 'config/variables.scss';
+
+// Base
+@import 'base/base.scss';
+
+
 body{
   min-height: 100vh;
   max-width:  100vw;
